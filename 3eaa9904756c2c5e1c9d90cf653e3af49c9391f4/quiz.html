@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bigHeader">
+        <h1>Understanding your girl friend</h1>
+    </div>
+
+    <div class="navigation">
+        <div class="block"> 
+            <a href="index.html">
+                <img src="img/home.png" width="80"></a>
+        </div>
+        <div class="block">
+            <a href="quiz.html">
+                <img src="img/homeEar.png" width="80"></a>
+        </div>
+        <div class="block">
+            <a href="photos.html">
+                <img src="img/homeBrain.png" width="80"></a>
+        </div>
+        <div class="block">
+            <a href="message.html">
+                <img src="img/homeLips.png" width="80"></a>
+        </div>
+    </div>
+
+    <div class="header">
+        <h2>Understanding what she wants to hear</h2>
+    </div>
+
+    <div id="containerQuiz">
+        <div id="start"><p>Start quiz!</div>
+        <div id="quiz" style="display:none">
+            <div id="qImg"></div>
+            <div id="question"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display:none"></div>
+    </div>
+    
+    <script src="quiz.js"></script>
+
+<div style="margin-top:500px;"></div>
+
+</body>
+</html>
